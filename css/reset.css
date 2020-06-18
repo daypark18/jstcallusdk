@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;800&display=swap');
+
+@font-face{
+  font-family: "dunkin";
+  src: url("../font/dunkin/DunkinSansBold.otf") format("opentype");;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: "smoothy";
+  src: url("../font/smoothy/SmoothySans.otf") format("opentype");;
+  font-weight: normal;
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{color: #111111; text-decoration: none;}
+ul, ol, li {list-style: none; margin: 0; padding: 0}
+button:focus{outline: none;}
