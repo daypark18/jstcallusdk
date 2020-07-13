@@ -329,11 +329,17 @@ padding-top:16px;}
 /* THIRD PAGE stylesheet starts*/
 .page.thr{ display: flex; flex-direction: column;}
 
-.page_inner .mun{
+.mun_inner{
+  width:100%; height:400px;
+  overflow: hidden;
+  position: absolute; top:-30px; right:0px;
+}
+.mun_inner .mun{
   display: block; width: 360px; height: 400px;
   background:url("../img/munch.png") no-repeat 0 0;
-  position: absolute; top:-30px; right:-255px;
+  position: absolute; top:0; right:-225px;
 }
+
 .page.thr h2, .page.last h2 {font-family: "dunkin" , sans-serif; font-weight: 800; font-size: 5rem;text-align: center;}
 .page.thr p {font-family: 'Nanum Gothic', sans-serif; color:#6c3615; font-size: 1.75rem;text-align: center;}
 .thr .menu_title{
@@ -342,7 +348,7 @@ padding-top:16px;}
 .thr .menu_title h2:before{
   content: ""; display: inline-block; width: 323px; height: 59px;
   background: url("../img/logo_3.png") no-repeat 0 0;
-  margin-right:33px; 
+  margin-right:33px;
 }
 .thr .menu_title h2{
   position: absolute; right:30px; top:-25px;
@@ -426,14 +432,14 @@ padding-top:16px;}
 }
 
 .dom{
-  position: fixed; width: 220px; height:220px;
-  top:60px;left:150px; z-index: 999;
+  position: fixed; width: 180px; height:180px;
+  top:5%;left:5%; z-index: 999;
 }
 
  .flipper_container{
   perspective: 1000px;
   background-color: transparent;
-  width:220px; height:220px;
+  width:180px; height:180px;
   position: absolute; top:0; left:0; z-index: 300
 }
 .flipper{
@@ -454,21 +460,24 @@ padding-top:16px;}
 }
 
 .fro .icon_don{
-    display: block; width:220px; height:220px;
+    display: block; width:180px; height:180px;
     /* position: absolute; top:0; right:0; */
-    background: url("../img/icon_don.png") no-repeat 0 0;
+    background: url("../img/icon_don.png") no-repeat center;
     background-size: 90%;
+    /* filter:drop-shadow(8px 8px 3px rgba(89, 89, 89, 0.4)); */
 }
 .ba{
   transform: rotateY(180deg);
   text-align: center;
+  font: .95rem 'Nanum Gothic', sans-serif; text-transform: uppercase;
+  line-height:20px;
+  color: #fafcf3;
 }
 .ba .img_dom{
-  display: block; width:220px; height:189px;
+  display: block; width:180px; height:180px;
   background: url("../img/dom.png") no-repeat center;
+  background-size:95%;
 }
-
-.page.thr .dom .flipper_container .flipper .ba p{color: #6c3615; font-size:1rem;}
 
 
 .thr .menu_select{
@@ -602,12 +611,23 @@ transform: rotate(1deg);
 
 
 .page.last{}
-.last .coffee{
+.coffee_inner{
+  width:100%; height:540px;
+  overflow: hidden;
+  position: absolute; top:-50px; right:0px;
+}
+.coffee_inner .coffee{
+  display: block; width: 480px; height: 540px;
+  background:url("../img/coffee.png") no-repeat 0 0;
+  position: absolute; top:0; right:-100px;
+  background-size:90%;
+}
+/* .last .coffee{
   display: block; width:480px; height:540px;
   background:url("../img/coffee.png") no-repeat 0 0;
-  position: absolute; top:-100px; right:-40px;
-    background-size:90%;
-}
+  position: absolute; top:0; right:-40px;
+  background-size:90%;
+} */
 .last .event_title{height:40px; margin: auto;}
 .last .event_title h2:before{
   content: ""; display: inline-block; width: 322px; height: 58px;
@@ -627,8 +647,8 @@ transform: rotate(1deg);
 
 
 .last .eve_slider{
-    position: relative; height: 300px; 
-    z-index: 999; margin: 75px auto; 
+    position: relative; height: 300px;
+    z-index: 998; margin: 75px auto;
     width:1080px; display: flex; align-items: center;
     flex-direction: row; overflow: hidden;
 }
@@ -637,7 +657,7 @@ transform: rotate(1deg);
   position: absolute; top:50%; transform: translateY(-50%);
   width:45px; height:45px; border-radius: 50%;
   background: #fafcf3; border: 2px solid #bead9c;
-  z-index: 999; cursor: pointer;
+  z-index: 998; cursor: pointer;
 }
 .last .eve_slider .arr.left{left:25px;}
 .last .eve_slider .arr.left:before{
@@ -729,7 +749,7 @@ margin:0 10px; float: left; border-radius: 20px;
 }
 
 .last .social{
-  height:100px; z-index: 999; 
+  height:100px; z-index: 999;
   margin:0 auto; text-align: center;
  padding-left: 200px;
 /*  position: absolute; top:0; left:50%; transform:translateY(-50%);*/

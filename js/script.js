@@ -21,7 +21,7 @@ $(function(){
 
     $(".m_donut.back").delay(100).animate({
       "top" : "0"
-    },1000,function(){
+    },1500,function(){
       $(".m_donut.back").delay(300).css(
         "background-image", "url(img/donut_bite.png)",
       );
